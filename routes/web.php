@@ -15,4 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+})->name('welcome');
+
+Route::get('/home/{name?}', function ($name=null) {
+    return view('home', ['nome'=>$name]);
+})->where('name', '[A-Za-z]+');
+
+Route::fallback(function () {
+    return view('fail');
 });
