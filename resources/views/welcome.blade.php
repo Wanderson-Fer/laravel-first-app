@@ -9,5 +9,7 @@
 <body>
     <h1>Hello, World</h1>
     <h2>Hi, my name is Wanderson</h2>
+
+    <a href="{{ route('home.index') }}">Home</a>
 </body>
 </html>

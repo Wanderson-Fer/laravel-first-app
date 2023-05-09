@@ -10,6 +10,6 @@
     <h1>Home</h1>
     <p>{{ $nome }}</p>
 
-    <a href="{{ route('welcome') }}">Clique aqui</a>
+    <a href="{{ route('welcome') }}">Mensagem de boas vindas</a>
 </body>
 </html>
