@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\homeController;
+use App\Http\Controllers\jogosController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,6 +25,8 @@ Route::get('/', function () {
 // })->where('name', '[A-Za-z]+');
 
 Route::get('/home', [homeController::class, 'index'])->name('home.index');
+
+Route::get('/jogos', [jogosController::class, 'index'])->name('jogos.index');
 
 Route::fallback(function () {
     return view('fail');

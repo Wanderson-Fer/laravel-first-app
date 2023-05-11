@@ -10,6 +10,9 @@
     <h1>Home</h1>
     <p>{{ $nome }}</p>
 
+    <a href="{{ route('jogos.index') }}">Jogos</a>
+    <hr>
     <a href="{{ route('welcome') }}">Mensagem de boas vindas</a>
+    <hr>
 </body>
 </html>
