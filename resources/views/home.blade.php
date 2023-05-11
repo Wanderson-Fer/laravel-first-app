@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<body>
-    <h1>Home</h1>
-    <p>{{ $nome }}</p>
+@extends('layouts.app')
 
-    <a href="{{ route('jogos.index') }}">Jogos</a>
-    <hr>
-    <a href="{{ route('welcome') }}">Mensagem de boas vindas</a>
-    <hr>
-</body>
-</html>
+@section('title','Home')
+
+@section('content')
+
+    <h2>Home</h2>
+    
+    <p>Olá {{ $nome }}</p>
+
+@endsection
