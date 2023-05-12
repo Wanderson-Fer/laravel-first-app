@@ -4,6 +4,16 @@
 
 @section('content')
     <!-- Tudo aqui é renderizado no template -->
+    <div class="row mt-4">
+        <div class="col-sm-10">
+            <h1>Jogos</h1>
+        </div>
+        <div class="col-sm-2">
+            <a href="{{ route('jogos.create') }}" class="btn btn-primary">Novo jogo</a>
+        </div>
+    </div>
+    <br>
+
     <table class="table table-striped">
         <thead>
             <tr>
